@@ -102,7 +102,7 @@ header{
 }
 
 #ravintolat{
-  display: inline-block;
+  display: block;
 }
 #laatikko{
   padding: 5%;
