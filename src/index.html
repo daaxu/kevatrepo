@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="assets/styles.css">
-  </head>
-  <body>
-    <p>
-      Hello! Open the developer tools, please.<br />
-      Start by editing the files in <code>src/</code> folder.
-    </p>
-  </body>
+    <head>
+        <meta charset="utf8">
+        <title>Example</title>
+        <link href="./assets/styles.css" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Etusivu</a>
+            <a href="#about">Ravintolat</a>
+            <a href="#contact">Contact</a>
+            <input type="text" placeholder="Hae ravintolan nimellä...">
+        </div>
+
+
+        <header>
+            <div class="flex-container" id="ylaosa">
+                <div id="logoarea">Lounari.
+                    <div>Missä tänäään syötäisiin?</div>
+                </div>
+                <div id="imagearea">
+                    <img id="kuva2" src="http://placekitten.com/200/300" alt="" >
+                </div>
+            </div>
+
+        </header>
+
+
+        <div class="flex-container" id="tekstialue">
+            <div id="infoteksti">Missä tänään syötäisiin? Tuttu tarina ennen lounashetkeä. Palvelu etsii lähelläsi olevat lounaspaikat, sekä näyttää niiden päivittäisen lounaslistan. Viikottaiset lounaslistat ovat myös käytettävissäsi. Pääset niihin klikkaamalla ravintolan logoa.</div>
+        </div>
+
+        <div class="container-box" id="ravintolat">
+          <h1>Sodexo</h1>
+          <div class="restaurant-box" id="laatikko">
+            <ul id="sodexo"></ul>
+          </div>
+            <div id="ruokalista">Ravintola2</div>
+        </div>
+
+        <button id="switch-lang">Switch language</button>
+        <button id="sort-menu">Sort menu</button>
+        <button id="pick-dish">Pick a randon dish</button>
+
+    </body>
 </html>
